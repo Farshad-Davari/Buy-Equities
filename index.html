@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="font awesome/all.js"></script>
+  <script src="font awesome/brands.js"></script>
+  <script src="font awesome/fontawesome.js"></script>
+  <script src="font awesome/solid.js"></script>
+  <script src="javascript/md5.min.js"></script>
+  <title>Buy Equities Application</title>
+  <link rel="icon" href="img/logo.png" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="font awesome/all.css">
+  <link rel="stylesheet" href="font awesome/brands.css">
+  <link rel="stylesheet" href="font awesome/fontawesome.css">
+  <link rel="stylesheet" href="font awesome/solid.css">
+  <link rel="stylesheet" href="css/wickedcss.min.css">
+  <link rel="stylesheet" href="css/csshake.css"> 
+</head>
+<body id="bdy">
+
+  <!-- section : header -->
+  <nav id="navbar">
+    <h1 id="account">
+        <span id="open-login-form">
+            <i class="fa fa-location-arrow" aria-hidden="true" id="open-login-form-icon"></i>
+        </span>
+        <span id="power-off">
+            <i class="fa fa-power-off" aria-hidden="true" id="power-off-icon"></i>
+        </span>
+        <span id="account-name">No Account</span> <span>|</span> <span id="account-amount">0</span><span> BTC</span>
+    </h1>
+
+    <h1 id="social-media">
+      <a href="https://twitter.com/Next_CEO_">
+        <img src="img/social-twitter.png" width="50" height="50">
+      </a>
+      <a href="https://open.spotify.com/user/uf4hntg2pildlxowruhdzyhlo?si=YC9gpoXwTfKBVpTPT9w2tw">
+        <img src="img/spotify.png" width="50" height="50">
+      </a>
+      <a href="https://t.me/js_core">
+        <img src="img/social-telegram.png" width="50" height="50">
+      </a>
+      <a href="https://www.linkedin.com/feed/">
+        <img src="img/linkedin.png" width="50" height="50">
+      </a>
+    </h1>
+
+    <h1 id="logo">
+      <img src="img/logo.png" width="140" height="140" class="pulse">
+    </h1>
+
+    <div id="search-engine">
+      <form id="search-engine-form">
+        <input type="search" id="search-bar">
+        <button><i class="fa fa-search fa-2x" id="search-icon"></i></button>
+      </form>
+    </div> 
+
+    <h1 id="text-logo">
+      <span>Buy Equities Application</span>
+    </h1>
+  </nav>
+
+  <!-- section : slider -->
+  <section id="slider">
+    <div id="video-container">
+      <video autoplay loop muted width="100%">
+        <source src="video/slider-video-3.mp4" type="video/mp4">
+      </video>
+      <img src="img/heart.png" width="100" height="100" class="pound" id="heart-icon">
+      <h2 id="slider-heading">اپلیکیشن خرید سهام</h2>
+      <img src="img/heart.png" width="100" height="100" class="pound" id="heart-icon-2">
+      <div id="slider-line"></div>
+      <p id="slider-text">اپلیکیشن خرید سهام بر اساس و پایه تکنولوژی بلاکچین نوشته شده است</p>
+      <a href="#company" id="company-btn" class="shake-slow">مشاهده شرکت ها</a>
+    </div>
+  </section>
+
+  <!-- section : companies -->
+  <section id="company">
+    <div id="company-container-all">
+      <div id="company-container" class="page-1-amazon">
+        <img src="img/amazon.jpg" width="300" height="300">
+        <h2>Amazon</h2>
+        <button id="btn-amazon">خرید سهام</button>
+      </div>
+      <div id="company-container" class="page-1-apple">
+        <img src="img/apple.png" width="300" height="300" style="background: #fff">
+        <h2>Apple</h2>
+        <button id="btn-apple">خرید سهام</button>
+      </div>
+      <div id="company-container" class="page-1-at">
+        <img src="img/at&t.png" width="300" height="300" style="background: #fff">
+        <h2>AT&T</h2>
+        <button id="btn-at">خرید سهام</button>
+      </div>
+    </div>
+
+    <div id="company-container-all">
+        <div id="company-container" class="page-1-digikala">
+          <img src="img/digikala.png" width="300" height="300">
+          <h2>Digikala</h2>
+          <button id="btn-digikala">خرید سهام</button>
+        </div>
+        <div id="company-container" class="page-1-facebook">
+          <img src="img/facebook.png" width="300" height="300" style="background: #fff">
+          <h2>Facebook</h2>
+          <button id="btn-facebook">خرید سهام</button>
+        </div>
+        <div id="company-container" class="page-1-google">
+          <img src="img/google-1.png" width="300" height="300" style="background: #fff!important;">
+          <h2>Google</h2>
+          <button id="btn-google">خرید سهام</button>
+        </div>
+    </div>
+
+    <div id="company-container-all">
+        <div id="company-container" class="page-1-netflix">
+          <img src="img/netflix.png" width="300" height="300">
+          <h2>Netflix</h2>
+          <button id="btn-netflix">خرید سهام</button>
+        </div>
+        <div id="company-container" class="page-1-samsung">
+          <img src="img/samsung.jpg" width="300" height="300" style="background: #fff">
+          <h2>Samsung</h2>
+          <button id="btn-samsung">خرید سهام</button>
+        </div>
+        <div id="company-container" class="page-1-snapp">
+          <img src="img/snapp.jpg" width="300" height="300" style="background: #fff!important;">
+          <h2>Snapp</h2>
+          <button id="btn-snapp">خرید سهام</button>
+        </div>
+    </div>
+  </section>
+
+
+  <!-- section : menu -->
+  <div id="menu">
+      <span id="information">
+        <i class="fa fa-info fa-3x" aria-hidden="true" id="information-icon"></i>
+      </span>
+      <span id="buy">
+        <i class="fa fa-magic fa-3x" aria-hidden="true" id="buy-icon"></i>
+      </span>
+      <span id="home">
+        <i class="fa fa-home fa-3x" aria-hidden="true" id="home-icon"></i>
+      </span>
+  </div>
+
+  <!-- section : login form -->
+  <section id="login-form">
+    <h1 id="login-form-heading">فرم ثبت نام</h2>
+      <div id="login-form-line"></div>
+    <form id="form">
+      <input type="text" id="name" placeholder="نام خود را وارد کنید"> <br>
+      <input type="text" id="last-name" placeholder="نام خانوادگی خود را وارد کنید"> <br>
+      <input type="email" id="email" placeholder="ایمیل خود را وارد کنید"> <br>
+      <input type="password" id="password" placeholder="رمز عبور خود را وارد کنید"> <br>
+      <input type="password" id="re-password" placeholder="رمز عبور خود را مجددا وارد کنید"> <br>
+      <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+      <p><label for="file" style="cursor: pointer;">عکس پروفایل خود را انتخاب کنید</label></p>
+      <p>
+        <button id="login-form-submit">ارسال</button>
+      </p>
+    </form>
+  </section>
+
+ <!-- section : amazon -->
+  <section id="amazon" class="slideRight">
+    <div id="buy-container">
+      <div id="buy-form">
+        <h2>Buy Amazon Equities</h2>
+        <div id="amazon-line"></div>
+        <form id="amazon-form">
+          <input type="text" id="amazon-sender" placeholder="فرستنده"> <br>
+          <input type="text" id="amazon-recipient" placeholder="گیرنده"> <br>
+          <input type="text" id="amazon-amount" placeholder="مقدار سهام"> <br>
+          <p>
+            <button id="amazon-submit">خرید سهام</button>
+          </p>
+        </form>
+      </div>
+      <div id="amazon-info">
+        <h2>Amazon</h2>
+        <div id="amazon-line"></div>
+        <p id="amazon-text">
+          این شرکت فعالیت جدی خود را در سال ۱۹۹۵ با عنوان فروشگاه آنلاین کتاب، آغاز کرد، سپس به فروش محصولات نو یا دست‌دوم از طریق اینترنت نمود. شرکت آمازون هم‌اکنون کتاب، سی‌دی، دی‌وی‌دی، بسته‌های نرم‌افزاری و حتی کفش و لباس نیز عرضه می‌کند و امروزه بیشترین درصد فروش را در بین سایر فروشگاه‌های اینترنت دارد. وبگاه آمازون، بخش اعظم از کسب‌وکار این شرکت به‌شمار می‌آید، که طیف وسیعی از خدمات و کالاها، از طریق آن عرضه می‌گردد. از ویژگی‌های این وبگاه، امکان ورق زدن و مطالعه نسخه الکترونیکی اغلب کتاب‌هایی است، که در این وب سایت برای فروش گذاشته شده‌است. این شرکت همچنین با کمک تکنولوژی‌های نوین چاپ و تولید کتاب، اقدام به ارائه کتاب‌هایی بر اساس سیستم چاپ بنابر تقاضا نموده‌است، که در این روش به جای چاپ و انبار کتاب در تعداد وسیع، تنها با نگهداری فایل الکترونیکی کتاب‌ها، پس از سفارش مشتری، اقدام به چاپ و تولید یک یا چند نسخه از کتاب نموده، آن‌ها را به آدرس مشتری ارسال می‌کند.
+          سهام این شرکت به میزان 6 بیت کوین اعلام شده است
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- section : apple -->
+  <section id="apple" class="slideRight">
+    <div id="buy-container">
+      <div id="buy-form">
+        <h2>Buy Apple Equities</h2>
+        <div id="apple-line"></div>
+        <form id="apple-form">
+          <input type="text" id="apple-sender" placeholder="فرستنده"> <br>
+          <input type="text" id="apple-recipient" placeholder="گیرنده"> <br>
+          <input type="text" id="apple-amount" placeholder="مقدار سهام"> <br>
+          <p>
+            <button id="apple-submit">خرید سهام</button>
+          </p>
+        </form>
+      </div>
+      <div id="apple-info">
+        <h2>Apple</h2>
+        <div id="apple-line"></div>
+        <p id="apple-text">
+            این شرکت در دههٔ هفتاد میلادی با معرفی ریزرایانه‌های اپل I، اپل II، اپل III و پس از آن مکینتاش به بازار به آغاز و گسترش نوعی رایانه شخصی کمک فراوانی نمود.
+
+            اپل معمولاً به تولید سخت‌افزارهای نوین و دارای طراحی صحیح معروف است. از محصولات سخت‌افزاری این شرکت می‌توان آیپد، آی‌مک، مک بوک و آی پاد و آیفون و اپل واچ و اپل تی وی را نام برد.
+
+            همچنین این شرکت در زمینهٔ تولید نرم‌افزار هم فعالیت دارد. نرم‌افزارهای آی‌تونز، آی‌لایف، آی ورک و سیستم‌عامل مورد استفاده در رایانه‌های این شرکت مک اواس ده نیز نمونه‌هایی از فعالیت نرم‌افزاری این شرکت هستند.
+
+            مدیریت اجرایی این شرکت برعهده استیو جابز بوده‌است. وی یک ماه قبل از مرگش از ریاست این شرکت کناره‌گیری کرد و به جای آن تیم کوک ریاست این شرکت را بر عهده گرفته‌است. استیو جابز همراه با استیو وزنیاک و رونالد وین[۲] این شرکت را بنیان‌گذاری کردند. رونالد وین در کمتر از دو هفته پس از تأسیس شرکت سهام خود را به جابز و وزنیاک واگذار کرد.
+            این شرکت از سوی مجله فوربز یکی از مشهورترین مجله‌های اقتصادی آمریکا و جهان برای هشتمین سال پیاپی (از سال ۲۰۱۱ تا سال ۲۰۱۸) به عنوان با ارزش‌ترین برند جهان انتخاب شد
+            سهام این شرکت به میزان 7 بیت کوین می باشد
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- section : at&t -->
+  <section id="at" class="slideRight">
+    <div id="buy-container">
+        <div id="buy-form">
+          <h2>Buy AT&T Equities</h2>
+          <div id="at-line"></div>
+          <form id="at-form">
+            <input type="text" id="at-sender" placeholder="فرستنده"> <br>
+            <input type="text" id="at-recipient" placeholder="گیرنده"> <br>
+            <input type="text" id="at-amount" placeholder="مقدار سهام"> <br>
+            <p>
+              <button id="at-submit">خرید سهام</button>
+            </p>
+          </form>
+        </div>
+        <div id="at-info">
+          <h2>AT&T</h2>
+          <div id="at-line"></div>
+          <p id="at-text">
+              شرکت مخابرات آمریکا (به انگلیسی: AT&T) بزرگ‌ترین شرکت مخابرات تلفن ثابت، سرویس‌دهنده اینترنت پهن‌باند، اشتراک تلویزیون اینترنتی و دومین اپراتور شبکه تلفن همراه آمریکا است. مرکز این شرکت، در شهر دالاس، تگزاس است.
+
+              این شرکت، در سال ۲۰۱۲ به عنوان هفتمین شرکت بزرگ آمریکایی بر پایه میزان درآمد، انتخاب شد. ای‌تی اند تی، همچنین پنجمین شرکت بزرگ غیرنفتی در ایالات متحده، پس از اپل، وال‌مارت، جنرال الکتریک و بنک آو آمریکا است. این شرکت، سومین شرکت بزرگ ایالت تگزاس، پس از اکسان‌موبیل و کونوکو فیلیپس و نیز به عنوان بزرگترین شرکت شهر دالاس شناخته می‌شود. ای‌تی اند تی، در سال ۲۰۱۲ در فهرست بزرگترین شرکت‌های دنیا، رتبه هفدهم را به خود اختصاص داد. این شرکت در سال ۲۰۱۱ با ۱۰۰٫۷ میلیون مشترک، به عنوان بزرگترین اپراتور تلفن همراه جهان شناخته شد.
+
+              شرکت ای‌تی اند تی، یکی از هفت شرکت عامل منطقه‌ای بل‌ساوت بود، که با نام شرکت ساوث‌وسترن بل شناخته می‌شد
+              سهام این شرکت به میزان 6 بیت کوین می باشد
+          </p>
+        </div>
+      </div>
+  </section>
+
+  <!-- section : digikala -->
+  <section id="digikala" class="slideRight">
+      <div id="buy-container">
+          <div id="buy-form">
+            <h2>Buy Digikala Equities</h2>
+            <div id="digikala-line"></div>
+            <form id="digikala-form">
+              <input type="text" id="digikala-sender" placeholder="فرستنده"> <br>
+              <input type="text" id="digikala-recipient" placeholder="گیرنده"> <br>
+              <input type="text" id="digikala-amount" placeholder="مقدار سهام"> <br>
+              <p>
+                <button id="digikala-submit">خرید سهام</button>
+              </p>
+            </form>
+          </div>
+          <div id="digikala-info">
+            <h2>Digikala</h2>
+            <div id="digikala-line"></div>
+            <p id="digikala-text">
+                دیجی‌کالا نام یکی از وبگاه‌های فعال در زمینه تجارت الکترونیک در ایران است. این وبگاه بزرگ‌ترین فروشگاه آنلاین در ایران است و روزانه بیش از ۲ میلیون بازدیدکننده دارد و ۷۰ درصد سهم بازار فروش آنلاین در ایران را از آن خود کرده‌است. دیجی‌کالا اکنون رتبه سوم الکسا در ایران بعد از گوگل و آپارات را در اختیار دارد.[۵] دفتر مرکزی این شرکت محل استقرار تیم‌های مارکتینگ و تأمین کالاست که در خیابان گاندی قرار دارد، دفتر دوم محل استقرار تیم‌های فنی و مالی است که در بلوار صبا در منطقه جردن تهران واقع است. دفتر سوم که مرکز پردازش کالای دانش نام دارد خارج از تهران در جاده قدیم کرج (فتح) در شهرک دانش واقع شده‌است. دیجی‌کالا سه مرکز پردازش و انبار کالا در تهران و ۲۳ مرکز توزیع در شهرهای بزرگ ایران دارد. مدل کسب‌وکار این فروشگاه اینترنتی ترکیب بازارگاه (Marketplace) و خرده‌فروشی (Retail) یا اصطلاحاً مدل ترکیبی یا هیبرید است. به غیر از فروشگاه آنلاین زیرمجموعه‌های دیجی‌کالا عبارت از دیجی‌استایل (پوشاک)، فیدیبو (کتاب الکترونیک)، دیجی‌پی (فین‌تک)، دیجی‌کالا نکست (نوآوری) و دیجی‌کلاب (تشویق مشتریان وفادار) هستند.
+                سهام این شرکت به میزان 4 بیت کوین می باشد
+            </p>
+          </div>
+        </div>
+  </section>
+
+  <!-- section : facebook -->
+  <section id="facebook" class="slideRight">
+    <div id="buy-container">
+        <div id="buy-form">
+          <h2>Buy Facebook Equities</h2>
+          <div id="facebook-line"></div>
+          <form id="facebook-form">
+            <input type="text" id="facebook-sender" placeholder="فرستنده"> <br>
+            <input type="text" id="facebook-recipient" placeholder="گیرنده"> <br>
+            <input type="text" id="facebook-amount" placeholder="مقدار سهام"> <br>
+            <p>
+              <button id="facebook-submit">خرید سهام</button>
+            </p>
+          </form>
+        </div>
+        <div id="facebook-info">
+          <h2>Facebook</h2>
+          <div id="facebook-line"></div>
+          <p id="facebook-text">
+              فیس‌بوک (به انگلیسی: Facebook) یک سرویس شبکه اجتماعی برخط است که در ۴ فوریه سال ۲۰۰۴ میلادی توسط مارک زاکربرگ و دوستانش ادواردو ساورین، اندرو مک‌کالم، داستین موسکوویتز و کریس هیوز در دانشگاه هاروارد به وجود آمد. در ابتدا نام‌نویسی در این وبگاه به دانشجویان دانشگاه هاروارد محدود بود. اما با گذشت زمان درِ آن برای دانشگاه‌های شهر بوستون، آیوی لیگ و دانشگاه استنفورد نیز گشوده‌شد. پس از افزوده‌شدن دانشگاه‌های مختلف و دبیرستان‌ها به لیست مجاز عضویت در فیس‌بوک، عضویت در آن به تدریج در دسترس تمامی افراد بالای ۱۳ سال در سراسر دنیا قرار گرفت.
+
+              کاربران برای بهره‌گیری کامل از فیس‌بوک باید در آن نام‌نویسی کنند. پس از نام‌نویسی، امکان ایجاد نمایه شخصی، افزودن دیگر کاربران به فهرست دوستان، فرستادن و دریافت پیام و دریافت آگاه‌سازی از تغییرات دوستان خود فراهم می‌شود. علاوه بر این موارد، پیوستن به گروه‌های مورد علاقه، یافتن هم‌کاران، هم‌کلاسی‌ها، پسندیدن پست‌ها، بیان دیدگاه و دسته‌بندی دوستان از امکانات دیگر این سیستم است. در ماه سپتامبر سال ۲۰۱۲ میلادی تعداد اعضای این وبگاه از مرز ۱ میلیارد نفر گذشت. که به گفته خود فیس‌بوک ۸/۷٪ آن‌ها کاربران جعلی هستند.[۱۰] وبگاه فیس‌بوک سالیانه ۱۸۰ پتابایت (معادل نیم پتابایت در روز) اطلاعات در سرورهای خود ذخیره می‌کند. این وبگاه به ۱۴۰ زبان دنیا قابل دسترس بوده و ۷۰ درصد از کاربران آن در خارج از ایالات متحده هستند.
+              سهام این شرکت به میزان 5 بیت کوین می باشد
+          </p>
+        </div>
+      </div>
+  </section>
+
+  <!-- section : google -->
+  <section id="google" class="slideRight">
+    <div id="buy-container">
+        <div id="buy-form">
+          <h2>Buy Google Equities</h2>
+          <div id="google-line"></div>
+          <form id="google-form">
+            <input type="text" id="google-sender" placeholder="فرستنده"> <br>
+            <input type="text" id="google-recipient" placeholder="گیرنده"> <br>
+            <input type="text" id="google-amount" placeholder="مقدار سهام"> <br>
+            <p>
+              <button id="google-submit">خرید سهام</button>
+            </p>
+          </form>
+        </div>
+        <div id="google-info">
+          <h2>Google</h2>
+          <div id="google-line"></div>
+          <p id="google-text">
+              گوگل (به انگلیسی: Google) یک شرکت آمریکایی فعال در حوزهٔ فناوری اطلاعات شامل جستجوی اینترنتی، رایانش ابری و تبلیغات، نرم‌افزار و سخت‌افزار است. این شرکت توسط لری پیج و سرگئی برین تأسیس شد که هر دوی آن‌ها در دانشگاه استنفورد به عنوان دانشجوی دکترا حضور داشتند و با نام «مردان گوگل» شناخته می‌شدند. گوگل ابتدا به عنوان یک شرکت خصوصی در ۴ سپتامبر ۱۹۹۸ ثبت شد و فروش اولیه سهام آن در ۱۹ اوت ۲۰۰۴ انجام شد. لری پیج و سرگئی برین و اریک اشمیت قبول کردند که به مدت بیست سال، یعنی تا سال ۲۰۲۴ در کنار هم کار کنند. هدف گوگل از آغاز «سازماندهی کردن اطلاعات دنیا و دسترس‌پذیر کردن آن‌ها برای عموم» بود،و شعار غیررسمی شرکت (که توسط مهندس گوگل امیت پاتل ابداع شد[۷]و توسط پل بوچهیت از آن حمایت  شد) «شرور نباشید» (به انگلیسی: Don't Be Evil) بود. در سال ۲۰۰۶ شرکت به محل جدید و کنونیش در مانتین ویو، کالیفرنیا منتقل شد. در سال ۲۰۱۵، گوگل قسمت‌های مختلف خود را به صورت شرکت خوشه‌ای آلفابت سازماندهی کرد. گوگل در حال حاضر بزرگ‌ترین زیرمجموعه‌ی آلفابت است.
+              سهام این شرکت به میزان 6 بیت کوین می باشد
+          </p>
+        </div>
+      </div>
+  </section>
+
+  <!-- section : netflix -->
+  <section id="netflix" class="slideRight">
+      <div id="buy-container">
+          <div id="buy-form">
+            <h2>Buy Netflix Equities</h2>
+            <div id="netflix-line"></div>
+            <form id="netflix-form">
+              <input type="text" id="netflix-sender" placeholder="فرستنده"> <br>
+              <input type="text" id="netflix-recipient" placeholder="گیرنده"> <br>
+              <input type="text" id="netflix-amount" placeholder="مقدار سهام"> <br>
+              <p>
+                <button id="netflix-submit">خرید سهام</button>
+              </p>
+            </form>
+          </div>
+          <div id="netflix-info">
+            <h2>Netflix</h2>
+            <div id="netflix-line"></div>
+            <p id="netflix-text">
+                نت‌فلیکس، (به انگلیسی: Netflix) یک شرکت جهانی رسانه سیال و تولیدکننده مجموعه‌های تلویزیونی آمریکایی است که تا آغاز سال ۲۰۱۶ بیش از ۷۵ میلیون مشترک دارد. این شرکت فعالیت‌اش را از سال ۱۹۹۸ با ارسال پستی دی‌وی‌دی آغاز کرد و در سال ۲۰۰۷ سرویس رسانه سیال را ارائه کرد. در سال ۲۰۱۰ حوزه فعالیت‌اش را به کانادا گسترش داد و هم‌اکنون در ۱۹۰ کشور دنیا خدماتش را ارائه می‌دهد. نتفلیکس اولین سریال خود، خانه پوشالی را در سال ۲۰۱۳ ارائه کرد و هم‌اکنون صدها ساعت برنامه تولید می‌کند.
+
+                دفتر مرکزی این شرکت در شهر لوس گاتوس، کالیفرنیا، قرار دارد و سهام آن در بازار بورس نزدک معامله می‌شود.
+
+                نتفلیکس در ۲۵ فوریه ۲۰۰۷ یک‌میلیاردمین دی‌وی‌دی خود را ارسال کرد. در آوریل ۲۰۱۱ ۲۳ میلیون مشترک در آمریکا و ۲۶ میلیون مشترک در جهان داشت. در سال ۲۰۱۱ درآمد فروش خدمات دیجیتالی این شرکت به یک و نیم میلیارد دلار رسید. نتفلیکس در ۲۳ اکتبر ۲۰۱۲ اعلام کرد که سود خالصش در سه‌ماهه سوم ۸۸ درصد شده‌است.در ژانویه ۲۰۱۳ اعلام کرد با افزایش ۲ میلیون مشترک نسبت به سال قبل مجموع مشترکان این شرکت در آمریکا به ۲۷٫۱ میلیون نفر و در مجموع جهانی ۲۹٫۴ میلیون نفر شده‌است. علاوه بر این با افزایش ۸ درصد سود درآمدش به ۹۴۵ میلیون دلار رسیده‌است.
+                سهام این شرکت به میزان 4 بیت کوین می باشد
+            </p>
+          </div>
+        </div>
+  </section>
+
+  <!-- section : samsung -->
+  <section id="samsung" class="slideRight">
+    <div id="buy-container">
+        <div id="buy-form">
+          <h2>Buy Samsung Equities</h2>
+          <div id="samsung-line"></div>
+          <form id="samsung-form">
+            <input type="text" id="samsung-sender" placeholder="فرستنده"> <br>
+            <input type="text" id="samsung-recipient" placeholder="گیرنده"> <br>
+            <input type="text" id="samsung-amount" placeholder="مقدار سهام"> <br>
+            <p>
+              <button id="samsung-submit">خرید سهام</button>
+            </p>
+          </form>
+        </div>
+        <div id="samsung-info">
+          <h2>Samsung</h2>
+          <div id="samsung-line"></div>
+          <p id="samsung-text">
+              سامسونگ (به کره‌ای: 삼성)(و به انگلیسی: samsung) شرکت خوشه‌ای کره‌ای و چندملیتی است، که مالک چندین شرکت تابعه و زیرمجموعه در صنایع مختلف می‌باشد، که برای نمونه می‌توان به سامسونگ الکترونیک، سامسونگ لایف و سامسونگ فایر، صنایع سنگین سامسونگ و سامسونگ سی اند تی اشاره کرد.
+
+              گروه سامسونگ در سال ۱۹۳۸ توسط لی بیونگ-چول، بعنوان یک شرکت بازرگانی تأسیس شد. این شرکت در طول ۳ دهه نخست، فعالیت‌های خود را در حوزه‌های ارائه خدمات مالی و بیمه، مبادلات اوراق بهادار و خرده‌فروشی توسعه داد و در اواخر دهه ۱۹۶۰ وارد عرصه تجارت الکترونیک گردید و در اواسط دهه ۱۹۷۰ نیز به صنایع کشتی‌سازی وارد شد.
+
+              پس از درگذشت لی بیونگ-چول، در سال ۱۹۸۷ شرکت سامسونگ به چهار گروه مستقل بنام‌های گروه سامسونگ، گروه شینسگائه، گروه سی‌جی و گروه هانسول تفکیک شد. در حال حاضر دفتر مرکزی این شرکت در شهر سامسونگ، سئول قرار دارد و بخشی از سهام آن در بازار بورس نیویورک معامله می‌شود.
+              سهام این شرکت به میزان 5 بیت کوین می باشد
+          </p>
+        </div>
+      </div>
+  </section>
+
+  <!-- section : snapp -->
+  <section id="snapp" class="slideRight">
+      <div id="buy-container">
+          <div id="buy-form">
+            <h2>Buy Snapp Equities</h2>
+            <div id="snapp-line"></div>
+            <form id="snapp-form">
+              <input type="text" id="snapp-sender" placeholder="فرستنده"> <br>
+              <input type="text" id="snapp-recipient" placeholder="گیرنده"> <br>
+              <input type="text" id="snapp-amount" placeholder="مقدار سهام"> <br>
+              <p>
+                <button id="snapp-submit">خرید سهام</button>
+              </p>
+            </form>
+          </div>
+          <div id="snapp-info">
+            <h2>Snapp</h2>
+            <div id="snapp-line"></div>
+            <p id="snapp-text">
+                اسنَپ (به انگلیسی: Snapp) نخستین سرویس هم‌سفری آنلاین در ایران است که از زمستان سال ۱۳۹۳ فعالیت خود را آغاز کرد. مالکیت این نرم‌افزار متعلق به گروه اینترنت ایران است.
+
+                برای درخواست خودرو از طریق این اپلیکیشن، مسافران پس از مشخص نمودن مسیر سفر، گزینه‌های سفر، انتخاب نوع سرویس و مشاهده هزینهٔ سفر، تقاضای خودرو کرده و این اپلیکیشن به‌طور خودکار مسافرها را با نزدیک‌ترین راننده مرتبط می‌سازد، همزمان موقعیت مسافر را نیز برای راننده می‌فرستد و راننده در صورت تمایل آن را تأیید می‌کند. همچنین مسافران نیز می‌توانند موقعیت رانندهٔ خود را مشاهده کنند. در اسنپ امکان پرداخت هزینه به هر دو صورت نقدی و غیرنقدی وجود دارد.
+
+                پس از آغاز به کار این نرم‌افزار، در برخی موارد اسنپ مورد انتقاد صنف تاکسیرانی قرار گرفت و به عملیات تاکسیرانی غیرقانونی، پایین آوردن قیمت و خدمات ناایمن متهم شد. با این وجود اسنپ در دو سال اول فعالیت خود با میانگین رشد ماهیانهٔ ۱۰۰ درصدی توانست به یکی از بازیگران اصلی تجارت الکترونیک در ایران تبدیل شود. در حال حاضر اسنپ با بیش از ۵۰۰ نفر پرسنل تمام وقت، نیم میلیون کاربر به‌عنوان راننده و ده میلیون کاربر به‌عنوان مسافر توانسته به یکی از سیستم‌های حمل و نقل هوشمند در شهرهای ایران تبدیل شود
+                سهام این شرکت به میزان 3 بیت کوین می باشد
+            </p>
+          </div>
+        </div>
+  </section>
+
+  <!-- false messages for login form -->
+  <div id="blank-inputs" class="slideDown">
+    <h2>Error Message</h2>
+    <p>فیلد های ورودی نمی توانند خالی باشند</p>
+  </div>
+
+  <div id="length-of-password" class="slideDown">
+    <h2>Error Message</h2>
+    <p>رمز عبور نمی تواند کمتر از 8 کاراکتر باشد</p>
+  </div>
+
+  <div id="compare-passwords" class="slideDown">
+    <h2>Error Messages</h2>
+    <p>فیلد های رمز عبور و تکرار رمز عبور مطابقت ندارند</p>
+  </div>
+
+  <!-- true message for login form -->
+  <div id="true-login" class="slideDown">
+    <h2>Welcome To Equities Application</h2>
+    <p>ثبت نام شما با موفقیت انجام شد</p>
+  </div>
+
+  <!-- section : log off message login form -->
+  <div id="log-off-message" class="slideDown">
+    <p>آیا اطمینان دارید که می خواهید از اکانت خود خارج شوید ؟</p>
+    <button id="log-off-yes-submit">بله</button> <button id="log-off-no-submit">خیر</button>
+  </div>
+
+  <!-- section : profile -->
+  <section id="profile-1" class="slideRight">
+    <h1>پروفایل</h1>
+    <div id="profile-1-line"></div>
+    <div id="profile-1-container">
+      <img src="img/profile-account.jpg" id="profile-1-img-default" width="200" height="200" style="border: 2px solid gray;border-radius: 50%">
+      <h2 id="profile-1-name">No Account</h2>
+      <button id="account-charge" class="shake-little">شارژ حساب</button>
+    </div>
+  </section>
+
+  <!-- section : transaction informations -->
+  <section id="transaction-info" class="slideRight">
+    <h1>معاملات ثبت شده</h1>
+    <div id="transaction-info-line"></div>
+    <div id="tab">
+      <button id="btn1">شرکت های خریده شده</button>
+      <button id="btn2">بلاک چین</button>
+    </div>
+
+    <div id="buying" class="tabcontent">
+      <div id="buy2">
+
+      </div>
+    </div>
+
+    <div id="new" class="tabcontent">
+      <div id="new-blocks2">
+        <div style="overflow-x: auto">
+          <table id="my-table">
+            <tr>
+              <th>Index</th>
+              <th>Timestamp</th>
+              <th>Transactions</th>
+              <th>Nonce</th>
+              <th>PreviousBlockHash</th>
+              <th>Hash</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section : charging account -->
+  <section id="charging-account" class="rollerLeft">
+    <span id="account-charging-close-icon">
+        <i class="fa fa-times fa-2x" aria-hidden="true" id="charging-account-close-icon"></i>
+    </span>
+    <img src="img/charging-account.png" width="250" height="250">
+    <h1 id="charging-account-number">4532890</h1>
+    <input type="text" id="charging-account-user" placeholder="عدد را وارد کنید">
+    <p>
+      <button id="charging-account-submit">استخراج بیت کوین</button>
+    </p>
+  </section>
+
+  <!-- section : Buy equities success or failed -->
+  <div id="buy-success" class="zoomer">
+    <p> خرید شما با موفقیت انجام شد به پروفایل خود مراجعه کنید</p>
+  </div>
+
+  <div id="buy-failed" class="zoomer">
+    <p>حساب شما برای خرید این شرکت کافی نمی باشد لطفا اقدام به افزایش موجودی خود کنید</p>
+  </div>
+
+  <!-- section : message not found in search -->
+  <section id="not-found" class="slideLeft">
+    <p>شرکت مورد نظر یافت نشد</p>
+  </section>
+
+<!-- script tags -->
+  <script src="javascript/jquery-3.4.1.min.js"></script>
+  <script src="javascript/scroll.js"></script>
+  <script src="javascript/website.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,2016 @@
+/* zoom : 75% */
+/* main styles */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+ 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: roboto;
+  src: url('../fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-family: vazir;
+  src: url('../fonts/Vazir.ttf');
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* section : header */
+#navbar {
+  background:#252a34;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row;
+  font-family: roboto;
+  letter-spacing: 3px;
+}
+
+#navbar #account  {
+  padding: 4rem 8rem;
+}
+
+#navbar #text-logo  {
+  padding: 4rem 8rem;
+}
+
+#power-off-icon {
+  padding: 0 2px;
+}
+
+#power-off-icon:hover {
+  color: #ff2e63;
+  cursor: pointer;
+}
+
+#open-login-form-icon:hover {
+  color: rgb(27, 108, 27);
+  cursor: pointer;
+}
+
+#navbar #social-media {
+  padding-top: 3rem;
+  padding-right: 5rem;
+}
+
+#navbar #social-media a {
+  padding: 0 0.3rem;
+}
+
+#navbar #search-engine {
+  padding-top: 5rem;
+  padding-left: 10rem; 
+}
+
+#navbar #search-engine #search-engine-form {
+  position: relative;
+  transform: translate(-50%,-50%);
+  transition: all 1s;
+  width: 50px;
+  height: 50px;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 4px solid white;
+  padding: 5px;
+}
+
+#navbar #search-engine #search-engine-form input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;;
+  height: 42.5px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: none;
+  font-size: 1.5rem;
+  font-family: roboto;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+#navbar #search-engine #search-engine-form #search-icon {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 42.5px;
+  height: 42.5px;
+  border-radius: 50%;
+  color: #07051a;
+  text-align: center;
+  font-size: 1.2em;
+  transition: all 1s;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#navbar #search-engine #search-engine-form:hover{
+  width: 200px;
+  cursor: pointer;
+}
+
+#navbar #search-engine #search-engine-form:hover input{
+  display: block;
+}
+
+#navbar #search-engine #search-engine-form:hover #search-icon{
+  background: #07051a;
+  color: white;
+  cursor: pointer;
+}
+
+/* section : slider */
+#slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#slider #video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#slider #slider-heading {
+  font-family: vazir;
+  font-size: 3rem;
+  text-align: center;
+  padding: 2rem 0; 
+  position: absolute;
+  top: 150px;
+  left: 860px;
+  color: #fff;
+}
+
+#slider #slider-line {
+  border-bottom: 4px solid #ff2e63;
+  position: absolute;
+  top: 280px;
+  left: 710px;
+  width: 700px;
+}
+
+#slider #slider-text {
+  color: #fff;
+  overflow: hidden; 
+  white-space: nowrap; 
+  margin: 0 auto;  
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+  font-family: vazir;
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem 0; 
+  position: absolute;
+  top: 330px;
+  left: 620px;
+  color: #fff;  
+}
+ 
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+#slider #company-btn {
+  font-family: vazir;
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 1rem 5rem; 
+  position: absolute;
+  top: 520px;
+  left: 900px;
+  color: #fff;
+  border: 3px solid #ff2e63;
+  border-radius: 4px;
+}
+
+#slider #company-btn:hover {
+  background: #ff2e63;
+}
+
+#slider #video-container #heart-icon {
+  position: absolute;
+  top: 170px;
+  left: 700px;
+}
+
+#slider #video-container #heart-icon-2 {
+  position: absolute;
+  top: 170px;
+  left: 1300px;
+}
+
+/* section : companies  */
+#company {
+  background: #eaeaea;
+  padding: 8rem 0;
+}
+
+#company #company-container-all {
+  max-width: 1500px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+#company-container {
+  width: 29%;
+  height: auto;
+  float: left;
+  box-shadow: 5px 5px 15px #000;
+  position: relative;
+  display: block; 
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 2rem 1rem;
+  background: #252a34;
+  border-radius: 4px;
+}
+
+#company-container img {
+  margin: 2rem 0;
+  border-radius: 50%; 
+}
+
+#company-container img:hover {
+  width: 320px;
+  height: 320px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#company-container h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 4rem 0;
+  font-family: roboto;
+  letter-spacing: 2px;
+}
+
+#company-container button {
+  padding: 1rem 5rem;
+  font-family: vazir;
+  font-size: 1.4rem;
+  margin: 3rem 0; 
+  border-radius: 4px;
+  color: #fff;
+  border: 2px solid #fff;
+  background: none;  
+}
+
+#company-container button:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #333;
+}
+
+/* section : menu */
+#menu {
+  background: #fff;
+  width: 500px;
+  height: 80px;
+  position: fixed;
+  left: 39%;
+  bottom: 0;
+  border-radius: 2px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  z-index: 1;
+  border: 2px solid #333;
+}
+
+#menu #information #information-icon {
+  margin: 1rem 1rem;  
+}
+
+#menu #information #information-icon:hover {
+  color: #ff2e63;
+  cursor: pointer;
+  font-size: 4rem;
+}
+
+#menu #buy #buy-icon {
+  margin: 1rem 1rem;
+}
+
+#menu #buy #buy-icon:hover {
+  color: #ff2e63;
+  cursor: pointer;
+  font-size: 4rem;
+}
+
+#menu #home #home-icon {
+  margin: 1rem 1rem;
+}
+
+#menu #home #home-icon:hover{
+  color: #ff2e63;
+  cursor: pointer;
+  font-size: 4rem;
+}
+
+/* section : login form */
+#login-form {
+  background: #fff;
+  border: 1px solid #fff;
+  width: 900px;
+  height: 650px;
+  padding: 3rem 0;
+  position: absolute;
+  margin: 0 auto;
+  top: 355px;
+  left: 623px;
+  z-index: 1;
+  border-radius: 5px;
+  animation: animatezoom 1.2s;
+  display: none;
+  border: 3px solid #333;
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+#login-form #login-form-heading {
+  text-align: center;
+  font-family: vazir;
+  font-size: 2.4rem;
+}
+
+#login-form #login-form-line {
+  border-bottom: 4px solid rgb(39, 78, 221);
+  width: 400px;
+  margin: 1rem auto;
+}
+
+#login-form #form {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+#login-form #form #name {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#login-form #form #last-name {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#login-form #form #email {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#login-form #form #password {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#login-form #form #re-password {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#login-form #form p {
+  text-align: center;
+}
+
+#login-form #form p #login-form-submit {
+  border: 1px solid rgb(39, 78, 221);
+  font-size: 1.4rem;
+  background: #fff;
+  color: #333;
+  font-family: vazir;
+  border-radius: 4px;
+  padding: 10px 60px;
+  margin-top: 5rem;
+}
+
+#login-form #form #login-form-submit:hover {
+  cursor: pointer;
+  color: #fff;
+  background: rgb(39, 78, 221);
+}
+
+#login-form #form p label {
+  color: rgb(39, 78, 221);
+  font-family: roboto;
+  font-size: 1.4rem;
+  position: absolute;
+  top: 500px;
+  left: 330px;
+}
+
+#login-form #form p label:hover {
+  color: #333;
+}
+
+/* section : amazon */
+#amazon {
+  background: #fff;
+  width: 90%;
+  position: absolute;
+  padding: 2rem 0;
+  top: 210px;
+  display: none;
+  margin: 2rem 6rem;
+  border-radius: 5px;
+  border: 2px solid #333;
+}
+
+#amazon #buy-container {
+  display: flex;
+  flex-flow: row;
+}
+
+#amazon #buy-container div {
+  flex: 1;
+}
+
+#amazon #buy-container #buy-form h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+}
+
+#amazon #buy-container #buy-form #amazon-line {
+  border-bottom: 4px solid rgb(39, 78, 221);
+  width: 400px;
+  margin: 1rem auto;
+}
+
+#amazon #buy-container #buy-form #amazon-form {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+#amazon #buy-container #buy-form #amazon-form #amazon-sender {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#amazon #buy-container #buy-form #amazon-form #amazon-recipient {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#amazon #buy-container #buy-form #amazon-form #amazon-amount {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#amazon #buy-container #buy-form #amazon-form p {
+  text-align: center;
+}
+
+#amazon #buy-container #buy-form #amazon-form p #amazon-submit {
+  border: 2px solid rgb(39, 78, 221);
+  font-size: 1.4rem;
+  background: #fff;
+  color: #333;
+  font-family: vazir;
+  border-radius: 4px;
+  padding: 10px 60px;
+  margin-top: 2rem;
+}
+
+#amazon #buy-container #buy-form #amazon-form p #amazon-submit:hover {
+  color: #fff;
+  background: rgb(39, 78, 221);
+  cursor: pointer;
+}
+
+#amazon #buy-container #amazon-info h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+}
+
+#amazon #buy-container #amazon-info #amazon-line {
+  border-bottom: 4px solid rgb(39, 78, 221);
+  width: 400px;
+  margin: 1rem auto;
+}
+
+#amazon #buy-container #amazon-info #amazon-text {
+  text-align: center;
+  font-family: vazir;
+  font-size: 1.3rem;
+  padding: 2rem 1rem;
+}
+
+/* section : apple */
+#apple {
+  background: #fff;
+  width: 90%;
+  position: absolute;
+  padding: 2rem 0;
+  top: 210px;
+  display: none;
+  margin: 2rem 6rem;
+  border-radius: 5px;
+  border: 2px solid #333;
+}
+
+#apple #buy-container {
+  display: flex;
+  flex-flow: row;
+}
+
+#apple #buy-container div {
+  flex: 1;
+}
+
+#apple #buy-container #buy-form h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+}
+
+#apple #buy-container #buy-form #apple-line {
+  border-bottom: 4px solid rgb(39, 78, 221);
+  width: 400px;
+  margin: 1rem auto;
+}
+
+#apple #buy-container #buy-form #apple-form {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+#apple #buy-container #buy-form #apple-form #apple-sender {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#apple #buy-container #buy-form #apple-form #apple-recipient {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#apple #buy-container #buy-form #apple-form #apple-amount {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#apple #buy-container #buy-form #apple-form p {
+  text-align: center;
+}
+
+#apple #buy-container #buy-form #apple-form p #apple-submit {
+  border: 2px solid rgb(39, 78, 221);
+  font-size: 1.4rem;
+  background: #fff;
+  color: #333;
+  font-family: vazir;
+  border-radius: 4px;
+  padding: 10px 60px;
+  margin-top: 2rem;
+}
+
+#apple #buy-container #buy-form #apple-form p #apple-submit:hover {
+  color: #fff;
+  background: rgb(39, 78, 221);
+  cursor: pointer;
+}
+
+#apple #buy-container #apple-info h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+}
+
+#apple #buy-container #apple-info #apple-line {
+  border-bottom: 4px solid rgb(39, 78, 221);
+  width: 400px;
+  margin: 1rem auto;
+}
+
+#apple #buy-container #apple-info #apple-text {
+  text-align: center;
+  font-family: vazir;
+  font-size: 1.3rem;
+  padding: 2rem 1rem;
+}
+
+/* section : at&t */
+#at {
+  background: #fff;
+  width: 90%;
+  position: absolute;
+  padding: 2rem 0;
+  top: 210px;
+  display: none;
+  margin: 2rem 6rem;
+  border-radius: 5px;
+  border: 2px solid #333;
+}
+
+#at #buy-container {
+  display: flex;
+  flex-flow: row;
+}
+
+#at #buy-container div {
+  flex: 1;
+}
+
+#at #buy-container #buy-form h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+}
+
+#at #buy-container #buy-form #at-line {
+  border-bottom: 4px solid rgb(39, 78, 221);
+  width: 400px;
+  margin: 1rem auto;
+}
+
+#at #buy-container #buy-form #at-form {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+#at #buy-container #buy-form #at-form #at-sender {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#at #buy-container #buy-form #at-form #at-recipient {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#at #buy-container #buy-form #at-form #at-amount {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#at #buy-container #buy-form #at-form p {
+  text-align: center;
+}
+
+#at #buy-container #buy-form #at-form p #at-submit {
+  border: 2px solid rgb(39, 78, 221);
+  font-size: 1.4rem;
+  background: #fff;
+  color: #333;
+  font-family: vazir;
+  border-radius: 4px;
+  padding: 10px 60px;
+  margin-top: 2rem;
+}
+
+#at #buy-container #buy-form #at-form p #at-submit:hover {
+  color: #fff;
+  background: rgb(39, 78, 221);
+  cursor: pointer;
+}
+
+#at #buy-container #at-info h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+}
+
+#at #buy-container #at-info #at-line {
+  border-bottom: 4px solid rgb(39, 78, 221);
+  width: 400px;
+  margin: 1rem auto;
+}
+
+#at #buy-container #at-info #at-text {
+  text-align: center;
+  font-family: vazir;
+  font-size: 1.3rem;
+  padding: 2rem 1rem;
+}
+
+/* section : digikala */
+#digikala {
+  background: #fff;
+  width: 90%;
+  position: absolute;
+  padding: 2rem 0;
+  top: 210px;
+  display: none;
+  margin: 2rem 6rem;
+  border-radius: 5px;
+  border: 2px solid #333;
+}
+
+#digikala #buy-container {
+  display: flex;
+  flex-flow: row;
+}
+
+#digikala #buy-container div {
+  flex: 1;
+}
+
+#digikala #buy-container #buy-form h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+}
+
+#digikala #buy-container #buy-form #digikala-line {
+  border-bottom: 4px solid rgb(39, 78, 221);
+  width: 400px;
+  margin: 1rem auto;
+}
+
+#digikala #buy-container #buy-form #digikala-form {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+#digikala #buy-container #buy-form #digikala-form #digikala-sender {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#digikala #buy-container #buy-form #digikala-form #digikala-recipient {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#digikala #buy-container #buy-form #digikala-form #digikala-amount {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#digikala #buy-container #buy-form #digikala-form p {
+  text-align: center;
+}
+
+#digikala #buy-container #buy-form #digikala-form p #digikala-submit {
+  border: 2px solid rgb(39, 78, 221);
+  font-size: 1.4rem;
+  background: #fff;
+  color: #333;
+  font-family: vazir;
+  border-radius: 4px;
+  padding: 10px 60px;
+  margin-top: 2rem;
+}
+
+#digikala #buy-container #buy-form #digikala-form p #digikala-submit:hover {
+  color: #fff;
+  background: rgb(39, 78, 221);
+  cursor: pointer;
+}
+
+#digikala #buy-container #digikala-info h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+}
+
+#digikala #buy-container #digikala-info #digikala-line {
+  border-bottom: 4px solid rgb(39, 78, 221);
+  width: 400px;
+  margin: 1rem auto;
+}
+
+#digikala #buy-container #digikala-info #digikala-text {
+  text-align: center;
+  font-family: vazir;
+  font-size: 1.3rem;
+  padding: 2rem 1rem;
+}
+
+/* section : facebook */
+#facebook {
+  background: #fff;
+  width: 90%;
+  position: absolute;
+  padding: 2rem 0;
+  top: 210px;
+  display: none;
+  margin: 2rem 6rem;
+  border-radius: 5px;
+  border: 2px solid #333;
+}
+
+#facebook #buy-container {
+  display: flex;
+  flex-flow: row;
+}
+
+#facebook #buy-container div {
+  flex: 1;
+}
+
+#facebook #buy-container #buy-form h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+}
+
+#facebook #buy-container #buy-form #facebook-line {
+  border-bottom: 4px solid rgb(39, 78, 221);
+  width: 400px;
+  margin: 1rem auto;
+}
+
+#facebook #buy-container #buy-form #facebook-form {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+#facebook #buy-container #buy-form #facebook-form #facebook-sender {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#facebook #buy-container #buy-form #facebook-form #facebook-recipient {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#facebook #buy-container #buy-form #facebook-form #facebook-amount {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#facebook #buy-container #buy-form #facebook-form p {
+  text-align: center;
+}
+
+#facebook #buy-container #buy-form #facebook-form p #facebook-submit {
+  border: 2px solid rgb(39, 78, 221);
+  font-size: 1.4rem;
+  background: #fff;
+  color: #333;
+  font-family: vazir;
+  border-radius: 4px;
+  padding: 10px 60px;
+  margin-top: 2rem;
+}
+
+#facebook #buy-container #buy-form #facebook-form p #facebook-submit:hover {
+  color: #fff;
+  background: rgb(39, 78, 221);
+  cursor: pointer;
+}
+
+#facebook #buy-container #facebook-info h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+}
+
+#facebook #buy-container #facebook-info #facebook-line {
+  border-bottom: 4px solid rgb(39, 78, 221);
+  width: 400px;
+  margin: 1rem auto;
+}
+
+#facebook #buy-container #facebook-info #facebook-text {
+  text-align: center;
+  font-family: vazir;
+  font-size: 1.3rem;
+  padding: 2rem 1rem;
+}
+
+/* section : google */
+#google {
+  background: #fff;
+  width: 90%;
+  position: absolute;
+  padding: 2rem 0;
+  top: 210px;
+  display: none;
+  margin: 2rem 6rem;
+  border-radius: 5px;
+  border: 2px solid #333;
+}
+
+#google #buy-container {
+  display: flex;
+  flex-flow: row;
+}
+
+#google #buy-container div {
+  flex: 1;
+}
+
+#google #buy-container #buy-form h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+}
+
+#google #buy-container #buy-form #google-line {
+  border-bottom: 4px solid rgb(39, 78, 221);
+  width: 400px;
+  margin: 1rem auto;
+}
+
+#google #buy-container #buy-form #google-form {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+#google #buy-container #buy-form #google-form #google-sender {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#google #buy-container #buy-form #google-form #google-recipient {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#google #buy-container #buy-form #google-form #google-amount {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#google #buy-container #buy-form #google-form p {
+  text-align: center;
+}
+
+#google #buy-container #buy-form #google-form p #google-submit {
+  border: 2px solid rgb(39, 78, 221);
+  font-size: 1.4rem;
+  background: #fff;
+  color: #333;
+  font-family: vazir;
+  border-radius: 4px;
+  padding: 10px 60px;
+  margin-top: 2rem;
+}
+
+#google #buy-container #buy-form #google-form p #google-submit:hover {
+  color: #fff;
+  background: rgb(39, 78, 221);
+  cursor: pointer;
+}
+
+#google #buy-container #google-info h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+}
+
+#google #buy-container #google-info #google-line {
+  border-bottom: 4px solid rgb(39, 78, 221);
+  width: 400px;
+  margin: 1rem auto;
+}
+
+#google #buy-container #google-info #google-text {
+  text-align: center;
+  font-family: vazir;
+  font-size: 1.3rem;
+  padding: 2rem 1rem;
+}
+
+/* section : netflix */
+#netflix {
+  background: #fff;
+  width: 90%;
+  position: absolute;
+  padding: 2rem 0;
+  top: 210px;
+  display: none;
+  margin: 2rem 6rem;
+  border-radius: 5px;
+  border: 2px solid #333;
+}
+
+#netflix #buy-container {
+  display: flex;
+  flex-flow: row;
+}
+
+#netflix #buy-container div {
+  flex: 1;
+}
+
+#netflix #buy-container #buy-form h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+}
+
+#netflix #buy-container #buy-form #netflix-line {
+  border-bottom: 4px solid rgb(39, 78, 221);
+  width: 400px;
+  margin: 1rem auto;
+}
+
+#netflix #buy-container #buy-form #netflix-form {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+#netflix #buy-container #buy-form #netflix-form #netflix-sender {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#netflix #buy-container #buy-form #netflix-form #netflix-recipient {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#netflix #buy-container #buy-form #netflix-form #netflix-amount {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#netflix #buy-container #buy-form #netflix-form p {
+  text-align: center;
+}
+
+#netflix #buy-container #buy-form #netflix-form p #netflix-submit {
+  border: 2px solid rgb(39, 78, 221);
+  font-size: 1.4rem;
+  background: #fff;
+  color: #333;
+  font-family: vazir;
+  border-radius: 4px;
+  padding: 10px 60px;
+  margin-top: 2rem;
+}
+
+#netflix #buy-container #buy-form #netflix-form p #netflix-submit:hover {
+  color: #fff;
+  background: rgb(39, 78, 221);
+  cursor: pointer;
+}
+
+#netflix #buy-container #netflix-info h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+}
+
+#netflix #buy-container #netflix-info #netflix-line {
+  border-bottom: 4px solid rgb(39, 78, 221);
+  width: 400px;
+  margin: 1rem auto;
+}
+
+#netflix #buy-container #netflix-info #netflix-text {
+  text-align: center;
+  font-family: vazir;
+  font-size: 1.3rem;
+  padding: 2rem 1rem;
+}
+
+/* section : samsung */
+#samsung {
+  background: #fff;
+  width: 90%;
+  position: absolute;
+  padding: 2rem 0;
+  top: 210px;
+  display: none;
+  margin: 2rem 6rem;
+  border-radius: 5px;
+  border: 2px solid #333;
+}
+
+#samsung #buy-container {
+  display: flex;
+  flex-flow: row;
+}
+
+#samsung #buy-container div {
+  flex: 1;
+}
+
+#samsung #buy-container #buy-form h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+}
+
+#samsung #buy-container #buy-form #samsung-line {
+  border-bottom: 4px solid rgb(39, 78, 221);
+  width: 400px;
+  margin: 1rem auto;
+}
+
+#samsung #buy-container #buy-form #samsung-form {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+#samsung #buy-container #buy-form #samsung-form #samsung-sender {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#samsung #buy-container #buy-form #samsung-form #samsung-recipient {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#samsung #buy-container #buy-form #samsung-form #samsung-amount {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#samsung #buy-container #buy-form #samsung-form p {
+  text-align: center;
+}
+
+#samsung #buy-container #buy-form #samsung-form p #samsung-submit {
+  border: 2px solid rgb(39, 78, 221);
+  font-size: 1.4rem;
+  background: #fff;
+  color: #333;
+  font-family: vazir;
+  border-radius: 4px;
+  padding: 10px 60px;
+  margin-top: 2rem;
+}
+
+#samsung #buy-container #buy-form #samsung-form p #samsung-submit:hover {
+  color: #fff;
+  background: rgb(39, 78, 221);
+  cursor: pointer;
+}
+
+#samsung #buy-container #samsung-info h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+}
+
+#samsung #buy-container #samsung-info #samsung-line {
+  border-bottom: 4px solid rgb(39, 78, 221);
+  width: 400px;
+  margin: 1rem auto;
+}
+
+#samsung #buy-container #samsung-info #samsung-text {
+  text-align: center;
+  font-family: vazir;
+  font-size: 1.3rem;
+  padding: 2rem 1rem;
+}
+
+/* section : snapp */
+#snapp {
+  background: #fff;
+  width: 90%;
+  position: absolute;
+  padding: 2rem 0;
+  top: 210px;
+  display: none;
+  margin: 2rem 6rem;
+  border-radius: 5px;
+  border: 2px solid #333;
+}
+
+#snapp #buy-container {
+  display: flex;
+  flex-flow: row;
+}
+
+#snapp #buy-container div {
+  flex: 1;
+}
+
+#snapp #buy-container #buy-form h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+}
+
+#snapp #buy-container #buy-form #snapp-line {
+  border-bottom: 4px solid rgb(39, 78, 221);
+  width: 400px;
+  margin: 1rem auto;
+}
+
+#snapp #buy-container #buy-form #snapp-form {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+#snapp #buy-container #buy-form #snapp-form #snapp-sender {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#snapp #buy-container #buy-form #snapp-form #snapp-recipient {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#snapp #buy-container #buy-form #snapp-form #snapp-amount {
+  width: 500px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(39, 78, 221);
+  font-size: 20px;
+  font-family: vazir;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#snapp #buy-container #buy-form #snapp-form p {
+  text-align: center;
+}
+
+#snapp #buy-container #buy-form #snapp-form p #snapp-submit {
+  border: 2px solid rgb(39, 78, 221);
+  font-size: 1.4rem;
+  background: #fff;
+  color: #333;
+  font-family: vazir;
+  border-radius: 4px;
+  padding: 10px 60px;
+  margin-top: 2rem;
+}
+
+#snapp #buy-container #buy-form #snapp-form p #snapp-submit:hover {
+  color: #fff;
+  background: rgb(39, 78, 221);
+  cursor: pointer;
+}
+
+#snapp #buy-container #snapp-info h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+}
+
+#snapp #buy-container #snapp-info #snapp-line {
+  border-bottom: 4px solid rgb(39, 78, 221);
+  width: 400px;
+  margin: 1rem auto;
+}
+
+#snapp #buy-container #snapp-info #snapp-text {
+  text-align: center;
+  font-family: vazir;
+  font-size: 1.3rem;
+  padding: 2rem 1rem;
+}
+
+/* section : false messages for login form */
+
+/* blank inputs */
+#blank-inputs {
+  border: 2px solid #333;
+  border-radius: 5px;
+  width: 700px;
+  height: 150px;
+  background: #fff;
+  position: absolute;
+  top: 200px;
+  left: 700px;
+  display: none;
+}
+
+#blank-inputs h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+#blank-inputs p {
+  text-align: center;
+  font-family: vazir;
+  font-size: 1.5rem;
+  color: rgb(188, 35, 35);
+}
+
+/* compare passwords */
+#compare-passwords {
+  border: 2px solid #333;
+  border-radius: 5px;
+  width: 700px;
+  height: 150px;
+  background: #fff;
+  position: absolute;
+  top: 200px;
+  left: 700px;
+  display: none;
+}
+
+#compare-passwords h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+#compare-passwords p {
+  text-align: center;
+  font-family: vazir;
+  font-size: 1.5rem;
+  color: rgb(188, 35, 35);
+}
+
+/* length of password */
+#length-of-password {
+  border: 2px solid #333;
+  border-radius: 5px;
+  width: 700px;
+  height: 150px;
+  background: #fff;
+  position: absolute;
+  top: 200px;
+  left: 700px;
+  display: none;
+}
+
+#length-of-password h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+#length-of-password p {
+  text-align: center;
+  font-family: vazir;
+  font-size: 1.5rem;
+  color: rgb(188, 35, 35);
+}
+
+/* section : true message for login form */
+#true-login {
+  border: 2px solid #333;
+  border-radius: 5px;
+  width: 700px;
+  height: 150px;
+  background: #fff;
+  position: absolute;
+  top: 200px;
+  left: 700px;
+  display: none;
+}
+
+#true-login h2 {
+  text-align: center;
+  font-family: roboto;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+#true-login p {
+  text-align: center;
+  font-family: vazir;
+  font-size: 1.5rem;
+  color: rgb(30, 149, 30);
+}
+
+/* section : log off message login form */
+#log-off-message {
+  border: 2px solid #333;
+  border-radius: 5px;
+  width: 700px;
+  height: 250px;
+  background: #fff;
+  position: absolute;
+  top: 200px;
+  left: 700px;
+  display: none;
+  z-index: 1;
+}
+
+#log-off-message p {
+  text-align: center;
+  font-family: vazir;
+  font-size: 1.5rem;
+  padding: 2rem 0;
+}
+
+#log-off-message button {
+  margin: 0 6.7rem;
+}
+
+#log-off-message #log-off-yes-submit {
+  border: 2px solid rgb(30, 149, 30);
+  background: rgb(30, 149, 30);
+  color: #fff;
+  padding: 1rem 3rem;
+  font-family: vazir;
+  font-size: 1.5rem;
+  border-radius: 3px;
+}
+
+#log-off-message #log-off-yes-submit:hover {
+  color: #333;
+  background: #fff;
+  cursor: pointer;
+}
+
+#log-off-message #log-off-no-submit {
+  border: 2px solid rgb(188, 35, 35);
+  background: rgb(188, 35, 35);
+  color: #fff;
+  padding: 1rem 3rem;
+  font-family: vazir;
+  font-size: 1.5rem;
+  border-radius: 3px;
+}
+
+#log-off-message #log-off-no-submit:hover {
+  color: #333;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* section : profile */
+
+/* profile-1 */
+#profile-1 {
+  background: #fff;
+  width: 60%;
+  position: absolute;
+  padding: 2rem 0;
+  top: 210px;
+  display: none;
+  margin: 2rem 26rem;
+  border-radius: 5px;
+  border: 2px solid #333;
+}
+
+#profile-1 #profile-1-line {
+  border-bottom: 5px solid rgb(39, 78, 221);
+  margin: 2rem auto;
+  width: 300px;
+}
+
+#profile-1 h1 {
+  text-align: center;
+  font-family: roboto;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+
+#profile-1 #profile-1-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+#profile-1 #profile-1-container #profile-1-name {
+  margin: 5rem 0;
+  text-align: center;
+  font-family: roboto;
+  font-size: 2rem;
+}
+
+#profile-1 #profile-1-container #account-charge {
+  padding: 0 3rem;
+  height: 80px;
+  margin: 4rem 0;
+  font-size: 1.5rem;
+  font-family: vazir;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  background: rgb(30, 56, 149);
+}
+
+#profile-1 #profile-1-container #account-charge:hover {
+  /* opacity: 0.7; */
+  cursor: pointer;  
+}
+
+/* section : transaction info */
+#transaction-info {
+  background: #fff;
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  padding: 2rem 0;
+  top: 620px;
+  display: none;
+  margin: 2rem 26rem;
+  border-radius: 5px;
+  border: 2px solid #333;
+  overflow: auto;
+}
+
+#transaction-info h1 {
+  text-align: center;
+  font-family: roboto;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+
+#transaction-info #transaction-info-line {
+  border-bottom: 5px solid rgb(39, 78, 221);
+  margin: 2rem auto;
+  width: 400px;
+}
+
+#transaction-info #tab {
+  overflow: hidden;
+  border: 3px solid rgb(30, 56, 149);
+  background-color: rgb(30, 56, 149);
+}
+
+#transaction-info #tab button {
+  background-color: inherit;
+  float: left;
+  border: 1px solid rgb(30, 56, 149);
+  outline: none;
+  cursor: pointer;
+  padding: 15px 16px;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: vazir;
+  margin: 0 2rem;
+  border-radius: 4px;
+}
+#transaction-info #tab button:hover {
+  color: rgb(30, 56, 149);
+  background: #fff;
+}
+
+.active2 {
+  color: rgb(30, 56, 149) !important;
+  background: #fff !important;
+}
+
+#transaction-info .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 3px solid rgb(30, 56, 149);
+  border-top: none;
+  overflow: auto;
+  margin: 0 1rem;
+}
+
+#transaction-info #buying #buy2 {
+  margin: 3rem;
+}
+
+#transaction-info #new #new-blocks2 {
+  margin: 3rem;
+}
+
+#transaction-info #new #new-blocks2 table {
+  border: 3px solid #333;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  font-family: roboto;
+  font-size: 1.6rem;
+}
+
+#transaction-info #new #new-blocks2 table th,td{
+  text-align: left;
+  padding: 1rem;
+}
+
+#transaction-info #new #new-blocks2 table tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+#transaction-info #allow #allow-transactions2 {
+  margin: 3rem;
+  font-family: roboto;
+  font-size: 1.6rem;
+}
+
+/* section : charging account */
+#charging-account {
+  background: #fff;
+  width: 30%;
+  height: 700px;
+  position: absolute;
+  padding: 2rem 0;
+  top: 180px;
+  display: none;
+  margin: 4rem 46rem;
+  border-radius: 5px;
+  border: 3px solid #333;
+  z-index: 1;
+}
+
+#charging-account #charging-account-close-icon {
+  position: absolute;
+  left: 570px;
+}
+
+#charging-account #charging-account-close-icon:hover {
+  color: rgb(236, 26, 26);
+  cursor: pointer;
+}
+
+#charging-account img {
+  display: block;
+  border-radius: 50%;
+  margin: 2rem auto;
+}
+
+#charging-account #charging-account-number {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+}
+
+#charging-account #charging-account-user {
+  width: 300px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 3px solid rgb(27, 108, 27);
+  font-size: 24px;
+  font-family: vazir;
+  text-align: center;
+  margin: 3rem 10rem;
+}
+
+#charging-account p {
+  text-align: center;
+}
+
+#charging-account p #charging-account-submit {
+  border: 3px solid rgb(27, 108, 27);
+  font-size: 1.5rem;
+  background: #fff;
+  color: #333;
+  font-family: vazir;
+  border-radius: 4px;
+  padding: 10px 60px;
+  margin-top: 2rem;
+}
+
+#charging-account p #charging-account-submit:hover {
+  cursor: pointer;
+  color: #fff;
+  background: rgb(27, 108, 27);
+}
+
+/* section :  buy equities success or failed */
+#buy-success {
+  border-radius: 5px;
+  width: 700px;
+  height: 100px;
+  background: #252a34;
+  position: absolute;
+  top: 194px;
+  left: 750px;
+  z-index: 1;
+  display: none;
+}
+
+#buy-success p {
+  text-align: center;
+  font-family: vazir;
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 2rem 0;
+}
+
+#buy-failed {
+  border-radius: 5px;
+  width: 700px;
+  height: 120px;
+  background: #252a34;
+  position: absolute;
+  top: 194px;
+  left: 750px;
+  z-index: 1;
+  display: none;
+}
+
+#buy-failed p {
+  text-align: center;
+  font-family: vazir;
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 2rem 0;
+  color: #fff;
+}
+
+/* section : package */
+.package {
+  border: none;
+  border-radius: 5px;
+  background: rgb(39, 78, 221);
+  color: #fff;
+  padding: 1rem 2rem;
+  width: 300px;
+  margin: 4rem auto;
+  text-align: center;
+  font-family: roboto;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+.package:hover {
+  opacity: 0.7;
+}
+
+/* section : clickable */
+.none {
+  pointer-events: none;
+}
+
+/* section : not found */
+#not-found {
+  border: 3px solid #333;
+  border-radius: 5px;
+  width: 700px;
+  height: 120px;
+  background: #fff;
+  position: absolute;
+  top: 210px;
+  left: 750px;
+  z-index: 1;
+  display: none;
+}
+
+#not-found p {
+  text-align: center;
+  font-family: vazir;
+  font-size: 1.5rem;
+  color: black;
+  margin: 2rem 0;
+}
+
+/* image upload */
+#upload {
+  position: absolute;
+  left: 130px;
+  top: 360px;
+}
+
